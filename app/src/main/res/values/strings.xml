@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PayBack Challenge</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="no_data_found">No data found</string>
+    <string name="tap_to_retry">Tap To Retry</string>
+    <string name="back_button">back button</string>
+
+    <string name="detail_screen_warning_dialog">Are you sure, you want to see the %1s details?</string>
+    <string name="detail_screen_warning_dialog_positive_text">Yes</string>
+    <string name="detail_screen_warning_dialog_negative_text">No</string>
+    <string name="source">Source:</string>
+    <string name="source_url">https://pixabay.com</string>
+    <string name="oops">Oops!</string>
+    <string name="no_internet_message">Couldn\'t reach the server. Check your internet connection</string>
+</resources>
