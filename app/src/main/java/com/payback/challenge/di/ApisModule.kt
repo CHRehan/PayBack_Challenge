@@ -14,6 +14,6 @@ class ApisModule {
 
     @Singleton
     @Provides
-    fun provideCountriesApi(retrofit: Retrofit): PixabayAPI =
+    fun providePixabayApi(retrofit: Retrofit): PixabayAPI =
         retrofit.create(PixabayAPI::class.java)
 }

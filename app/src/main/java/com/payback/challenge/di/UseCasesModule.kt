@@ -13,6 +13,6 @@ import dagger.hilt.components.SingletonComponent
 class UseCasesModule {
 
     @Provides
-    fun provideSectionsUseCase(imagesRepository: ImagesRepository, resources: Resources) =
+    fun provideImagesUseCase(imagesRepository: ImagesRepository, resources: Resources) =
         ImagesUseCase(imagesRepository, resources)
 }

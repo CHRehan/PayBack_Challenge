@@ -1,11 +1,11 @@
 package com.payback.challenge.features.pixabay.data.repository
 
+import com.payback.challenge.features.pixabay.data.datasource.local.ImageDetailsDao
 import com.payback.challenge.features.pixabay.data.datasource.remote.PixabayAPI
 import com.payback.challenge.features.pixabay.data.mapper.ImageDetailsApiToDatabaseMapper
 import com.payback.challenge.features.pixabay.data.mapper.ImageDetailsApiToDomainMapper
 import com.payback.challenge.features.pixabay.data.mapper.ImageDetailsDatabaseToDomainMapper
 import com.payback.challenge.features.pixabay.data.mapper.MapperInput
-import com.payback.challenge.features.pixabay.data.datasource.local.ImageDetailsDao
 import com.payback.challenge.features.pixabay.domain.model.ImageDetailsDomainModel
 import com.payback.challenge.features.pixabay.domain.repository.ImagesRepository
 import javax.inject.Inject

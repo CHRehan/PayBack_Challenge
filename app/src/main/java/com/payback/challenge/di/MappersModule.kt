@@ -25,11 +25,11 @@ class MappersModule {
 
     @Singleton
     @Provides
-    fun provideCountriesDatabaseToDomainMapper(): ImageDetailsDatabaseToDomainMapper =
+    fun provideImageDetailsDatabaseToDomainMapper(): ImageDetailsDatabaseToDomainMapper =
         ImageDetailsDatabaseToDomainMapper()
 
     @Singleton
     @Provides
-    fun provideCountriesDataToDatabaseMapper(): ImageDetailsApiToDatabaseMapper =
+    fun provideImageDetailsApiToDatabaseMapper(): ImageDetailsApiToDatabaseMapper =
         ImageDetailsApiToDatabaseMapper()
 }

@@ -15,8 +15,6 @@ data class ImageDetailsApiModel(
     val comments: Long?,
     @SerializedName("user_id")
     val userId: Long?,
-    @SerializedName("user")
     val user: String?,
-    @SerializedName("userImageURL")
     val userImageURL: String?
 )

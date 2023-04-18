@@ -15,10 +15,10 @@ class ImageDetailsDomainToPresentationMapper :
         previewURL = input.previewURL,
         webFormatURL = input.webFormatURL,
         largeImageURL = input.largeImageURL,
-        downloads = input.downloads.orZero(),
-        likes = input.likes.orZero(),
-        comments = input.comments.orZero(),
-        userId = input.userId.orZero(),
+        downloads = input.downloads,
+        likes = input.likes,
+        comments = input.comments,
+        userId = input.userId,
         user = input.user,
         userImageURL = input.userImageURL
     )
