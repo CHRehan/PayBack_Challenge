@@ -11,6 +11,7 @@ import com.payback.challenge.features.pixabay.presentation.model.ImagesViewState
 import com.payback.challenge.features.pixabay.presentation.model.emptyViewState
 import com.payback.challenge.features.pixabay.ui.mapper.ImageDetailsPresentationToUiMapper
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
@@ -37,7 +38,7 @@ class ImagesViewModel @Inject constructor(
 
     fun getImages(query: String) {
         setDataLoading()
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             imagesUseCase(query).collect { imagesResource ->
                 when (imagesResource) {
                     is Success -> {
